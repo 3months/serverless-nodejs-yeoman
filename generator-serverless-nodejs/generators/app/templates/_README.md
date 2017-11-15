@@ -12,11 +12,11 @@ https://docs.npmjs.com/cli/version
 
 Examples:
 
-`npm version patch`
+`yarn version --new-version patch`
 
-`npm version minor`
+`yarn version --new-version minor`
 
-`npm version major`
+`yarn version --new-version major`
 
 The preversion script in package.json runs tests before a version is incremented. This can be changed to `npm run coverage:strict` to ensure coverage is at a set level.
 
