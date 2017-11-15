@@ -3,10 +3,9 @@ const path = require('path')
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 
 const plugins = [
-  // fix: webpack require('crypto') TypeError: require is not a function
-  //      lambdas give a "module initialization error: TypeError" error otherwise
-  //      bitcore-wallet-client is the module that causes this error in this context
-  new webpack.DefinePlugin({ 'global.GENTLY': false })
+  // // fix: webpack require('crypto') TypeError: require is not a function
+  // //      lambdas give a "module initialization error: TypeError" error otherwise
+  // new webpack.DefinePlugin({ 'global.GENTLY': false })
 ]
 
 if (process.env.NODE_ENV !== 'test') {
