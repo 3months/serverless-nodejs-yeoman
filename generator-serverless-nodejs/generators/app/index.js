@@ -42,8 +42,9 @@ module.exports = class extends Generator {
       this.destinationRoot()
     );
 
+    // Copy all dotdirs
     this.fs.copy(
-      this.templatePath('static/.github/*'),
+      this.templatePath('static/.*/*'),
       this.destinationRoot()
     );
 
