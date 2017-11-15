@@ -1,37 +1,24 @@
-# serverless-nodejs-yeoman
+# <%= projectName %>
 
-## Install
+<%= projectName %> - A Serverless Framework Node.js application
 
-During development, make the generator available as a global module:
+Bootstrapped using the serverless-nodejs Yeoman Generator
 
-```
-git clone https://github.com/SteveHoggNZ/serverless-nodejs-yeoman.git && \
-  cd generator-serverless-nodejs && \
-  npm link
-```
+## Usage Notes
 
-Post development:
+### Versioning
 
-Publish as an NPM module and install it globally
+https://docs.npmjs.com/cli/version
 
-## Usage
+Examples:
 
-```
-mkdir new-project && \
-  cd $_ && \
-  yo serverless-nodejs
-```
+`npm version patch`
 
-## Notes
+`npm version minor`
 
-### Bootstrapped Using
+`npm version major`
 
-```
-npm install -g generator-generator &&
-  mkdir generator-serverless-nodejs &&
-  cd $_ &&
-  yo generator
-```
+The preversion script in package.json runs tests before a version is incremented. This can be changed to `npm run coverage:strict` to ensure coverage is at a set level.
 
 ### Code Coverage
 
@@ -43,9 +30,11 @@ https://github.com/zinserjan/mocha-webpack/issues/19
 * Mocha includes babel-polyfill for each of the tests i.e. the files can be tested independently of handler.js
 * The if around babel-polyfill in handler.js allows Mocha to test it without double requiring the polyfill
 
-### Atom Plugins
+### Atom Editor
 
-* Show non-standard problems as you type
+#### Plugins
+
+* Show non-standard-js problems as you type
   * linter
   * linter-ui-default
   * linter-js-standard-engine
@@ -66,5 +55,3 @@ This fixes the problem:
 cd ~/.atom/packages/prettier-standard-formatter
 yarn add prettier-standard-formatter
 ```
-
-TODO: a pull request for this fix
