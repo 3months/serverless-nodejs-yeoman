@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Stephen Hogg",
+      "authorEmail": "steve@h4.nz",
+      "authorUrl": ""
+    }
+  }
+}

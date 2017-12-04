@@ -14,10 +14,12 @@ Sets up boilerplate for a Serverless Framework Node.js with the following featur
 During development, make the generator available as a global module:
 
 ```
-git clone https://github.com/SteveHoggNZ/serverless-nodejs-yeoman.git && \
-  cd generator-serverless-nodejs && \
-  npm link
+git clone https://github.com/SteveHoggNZ/serverless-nodejs-yeoman.git
 ```
+
+`cd generator-serverless-nodejs && npm link`
+
+`cd generator-serverless-ts && npm link`
 
 Post development:
 
