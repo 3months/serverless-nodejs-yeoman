@@ -28,3 +28,8 @@ export const greeter = (person: Person) =>
  * @returns The result of the multiplication.
  */
 export const hello = (num1: number, num2: number): number => num1 * num2
+
+async function hello2(): Promise<string> {
+  const x = await Promise.resolve('foo');
+  return x;
+}
