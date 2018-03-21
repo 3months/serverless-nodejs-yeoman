@@ -55,6 +55,12 @@ module.exports = class extends Generator {
     );
 
     this.fs.copyTpl(
+      this.templatePath('_serverless.yml'),
+      this.destinationPath('serverless.yml'),
+      { projectName: this.props.projectName }
+    );
+
+    this.fs.copyTpl(
       this.templatePath('_README.md'),
       this.destinationPath('README.md'),
       { projectName: this.props.projectName }
