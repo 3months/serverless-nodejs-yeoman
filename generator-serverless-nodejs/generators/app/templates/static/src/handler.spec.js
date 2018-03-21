@@ -1,9 +1,10 @@
 'use strict'
 /* global describe it */
-
 import sinon from 'sinon'
-import { expect } from 'chai'
+import chai, { expect } from 'chai'
 import { responseFormat, makeHello, hello } from './handler.js'
+
+chai.use(require('chai-as-promised')).use(require('sinon-chai'))
 
 // let proxyquire = require('proxyquire')
 // proxyquire = proxyquire.noPreserveCache();

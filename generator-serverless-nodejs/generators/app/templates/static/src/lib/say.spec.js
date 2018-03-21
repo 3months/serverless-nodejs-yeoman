@@ -1,9 +1,10 @@
 'use strict'
 /* global describe it */
-
 import sinon from 'sinon'
-import { expect } from 'chai'
+import chai, { expect } from 'chai'
 import { waitThenSay, makeSaythings, saythings } from './say.js'
+
+chai.use(require('chai-as-promised')).use(require('sinon-chai'))
 
 describe('(module) say', function () {
   describe('waitThenSay', function () {
